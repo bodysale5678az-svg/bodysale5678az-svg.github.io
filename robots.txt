@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bodysale5678az-svg.github.io/sitemap.xml
