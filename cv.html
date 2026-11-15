@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mahmoud Waleed Mohamed Saleh — CV</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  *{ box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html,body{ margin:0; padding:0; background:#eef1f6; }
+  body{
+    font-family:"Calibri","Segoe UI",Arial,Helvetica,sans-serif;
+    color:#1b2431; font-size:10.2pt; line-height:1.42;
+  }
+  .page{
+    width:210mm; min-height:297mm; margin:16px auto; padding:13mm 14mm;
+    background:#fff; box-shadow:0 6px 28px rgba(16,24,40,.14);
+  }
+
+  /* ---------- Header ---------- */
+  h1{
+    font-size:23pt; letter-spacing:-.4pt; margin:0 0 2px;
+    color:#0b1524; font-weight:700;
+  }
+  .role{
+    font-size:10.6pt; color:#1d4ed8; font-weight:600;
+    letter-spacing:.2pt; margin-bottom:7px;
+  }
+  .contact{
+    font-size:9.2pt; color:#414f63; display:flex; flex-wrap:wrap;
+    gap:4px 0; align-items:center;
+  }
+  .contact span{ white-space:nowrap; }
+  .contact span + span::before{
+    content:"|"; color:#b4becd; margin:0 7px;
+  }
+  .contact a{ color:#1d4ed8; text-decoration:none; }
+
+  /* ---------- Sections ---------- */
+  .sec{ margin-top:13px; }
+  .sec-title{
+    font-size:9.6pt; font-weight:700; text-transform:uppercase;
+    letter-spacing:1.1pt; color:#0f2557;
+    border-bottom:1.2pt solid #1d4ed8; padding-bottom:2.5px; margin-bottom:7px;
+  }
+
+  /* ---------- Entry ---------- */
+  .entry{ margin-bottom:9px; }
+  .entry:last-child{ margin-bottom:0; }
+  .entry-head{
+    display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  }
+  .entry-head .left{ flex:1 1 auto; }
+  .entry-head .t{
+    font-weight:700; font-size:10.6pt; color:#0b1524;
+  }
+  .entry-head .org{
+    color:#1d4ed8; font-weight:600;
+  }
+  .entry-head .when{
+    font-size:8.8pt; color:#5b6b82; white-space:nowrap; flex:0 0 auto;
+    font-style:italic;
+  }
+  .entry-sub{
+    font-size:9.4pt; color:#4b5a70; font-style:italic; margin:1px 0 3px;
+  }
+  ul{ margin:3px 0 0; padding-left:15px; }
+  li{ margin-bottom:2.2px; }
+  li::marker{ color:#1d4ed8; }
+  .proj .entry-head .t{ font-size:10.2pt; }
+  .stack{ font-size:8.9pt; color:#5b6b82; font-weight:400; }
+
+  /* ---------- Skills grid ---------- */
+  .skill-row{ display:flex; gap:6px; margin-bottom:3px; }
+  .skill-row .k{
+    font-weight:700; color:#0f2557; flex:0 0 128px; font-size:9.6pt;
+  }
+  .skill-row .v{ flex:1 1 auto; }
+
+  /* ---------- Courses / languages ---------- */
+  .two-col{ display:flex; gap:26px; }
+  .two-col > div{ flex:1 1 0; }
+
+  @media print{
+    html,body{ background:#fff; font-size:9pt; line-height:1.3; }
+    .page{ box-shadow:none; margin:0; width:auto; min-height:0; padding:0; }
+    .no-print{ display:none !important; }
+    .sec{ break-inside:avoid; margin-top:7.5px; }
+    .entry{ break-inside:avoid; margin-bottom:5px; }
+    h1{ font-size:18.5pt; margin-bottom:1px; }
+    .role{ font-size:9.3pt; margin-bottom:4px; }
+    .contact{ font-size:8.6pt; }
+    .sec-title{ margin-bottom:4px; padding-bottom:1.5px; font-size:9pt; }
+    li{ margin-bottom:1px; }
+    .entry-sub{ margin:0 0 1px; font-size:8.8pt; }
+    .entry-head .t{ font-size:9.9pt; }
+    ul{ margin-top:2px; }
+  }
+
+  /* Screen-only toolbar */
+  .toolbar{
+    position:fixed; top:14px; right:14px; z-index:9; display:flex; gap:8px;
+  }
+  .toolbar button{
+    font:600 10pt "Segoe UI",Arial,sans-serif; cursor:pointer;
+    padding:9px 16px; border-radius:8px; border:1px solid #c3cddd;
+    background:#fff; color:#0f2557;
+  }
+  .toolbar button.primary{
+    background:#1d4ed8; color:#fff; border-color:#1d4ed8;
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <button class="primary" onclick="window.print()">Save as PDF</button>
+</div>
+
+<div class="page">
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <h1>Mahmoud Waleed Mohamed Saleh</h1>
+    <div class="role">Backend Developer &nbsp;·&nbsp; Computer Science Student &nbsp;·&nbsp; Community Leader</div>
+    <div class="contact">
+      <span>Cairo, Egypt</span>
+      <span>0111 737 6045</span>
+      <span><a href="mailto:bodysale5678az@gmail.com">bodysale5678az@gmail.com</a></span>
+      <span><a href="https://www.linkedin.com/in/mahmoud-saleh-b1a085362">LinkedIn</a></span>
+      <span><a href="https://github.com/bodysale5678az-svg">GitHub</a></span>
+    </div>
+  </header>
+
+  <!-- ============ SUMMARY ============ -->
+  <div class="sec">
+    <div class="sec-title">Summary</div>
+    <p style="margin:0">
+      Computer Science student and freelance backend developer specializing in <b>C# and .NET</b>,
+      with a strong foundation in object-oriented design, data structures and software engineering.
+      Leader of the <b>NEC community</b> at Akhbar El-Youm Academy, overseeing both technical and
+      non-technical tracks, and an experienced <b>C++ instructor</b> with hands-on teaching practice.
+    </p>
+  </div>
+
+  <!-- ============ EDUCATION ============ -->
+  <div class="sec">
+    <div class="sec-title">Education</div>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">B.Sc. in Computer Science</span> —
+          <span class="org">Akhbar El-Youm Academy</span>
+        </div>
+        <div class="when">Cairo, Egypt</div>
+      </div>
+      <div class="entry-sub">
+        Cumulative GPA: 2.9 &nbsp;·&nbsp; Expected Graduation: 2028
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <div class="sec">
+    <div class="sec-title">Experience</div>
+
+    <!-- NEC Leader -->
+    <div class="entry">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">Community Leader</span> —
+          <span class="org">NEC (Novera E-Club), Akhbar El-Youm Academy</span>
+        </div>
+        <div class="when">Current</div>
+      </div>
+      <div class="entry-sub">Technical &amp; Non-Technical Tracks Lead &nbsp;·&nbsp; Cairo, Egypt</div>
+      <ul>
+        <li>Lead the entire community across <b>both technical and non-technical tracks</b> — software development, data, AI and cybersecurity alongside marketing, graphic design, video editing, PR and HR.</li>
+        <li>Own the community's direction and operations: structuring tracks, selecting and managing team leads, and driving delivery across all activities.</li>
+        <li>Plan and execute <b>events, workshops, bootcamps, competitions and hackathons</b>, connecting students with industry professionals and real-world practice.</li>
+        <li>Mentor members and build a culture of hands-on learning, continuing the club's <b>GDSC heritage</b> as an independent, student-led community.</li>
+      </ul>
+    </div>
+
+    <!-- Freelance -->
+    <div class="entry">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">Freelance Backend Developer</span>
+        </div>
+        <div class="when">Current</div>
+      </div>
+      <div class="entry-sub">Backend Development with .NET &nbsp;·&nbsp; Cairo, Egypt</div>
+      <ul>
+        <li>Develop backend applications using C# and .NET with a focus on object-oriented design and clean software structure.</li>
+        <li>Apply OOP, data structures and software engineering concepts while building practical systems.</li>
+      </ul>
+    </div>
+
+    <!-- Instructor -->
+    <div class="entry">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">C++ Instructor</span> —
+          <span class="org">DSC Activity, Akhbar El-Youm Academy</span>
+        </div>
+        <div class="when">Second Year</div>
+      </div>
+      <ul>
+        <li>Taught students C++, Object-Oriented Programming (OOP) and Data Structures.</li>
+        <li>Explained programming concepts and guided students through practical problem-solving and projects.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ PROJECTS ============ -->
+  <div class="sec">
+    <div class="sec-title">Projects</div>
+
+    <div class="entry proj">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">Anqoodi Store — Evolving Software Project</span>
+          <span class="stack">&nbsp;|&nbsp; C++, Python, OOP, .NET</span>
+        </div>
+      </div>
+      <ul>
+        <li>Developed the project through four progressive stages — from a C++ implementation to Python, then an OOP-based design, and finally a .NET backend integration.</li>
+        <li>Refactored and enhanced the system at each stage to improve structure, maintainability and scalability, transitioning from fundamental programming to backend development.</li>
+      </ul>
+    </div>
+
+    <div class="entry proj">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">Banking System</span>
+          <span class="stack">&nbsp;|&nbsp; C#, OOP</span>
+        </div>
+      </div>
+      <ul>
+        <li>Built a complete banking system in C# using object-oriented principles, designed around structured classes and reusable components to model core banking operations on a clean architecture.</li>
+      </ul>
+    </div>
+
+    <div class="entry proj">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">Digital Wallet Systems — Vodafone Cash &amp; Orange Cash</span>
+          <span class="stack">&nbsp;|&nbsp; C++, C#</span>
+        </div>
+      </div>
+      <ul>
+        <li>Developed wallet systems inspired by Vodafone Cash and Orange Cash workflows, modeling real-world financial operations and applying structured and OOP concepts.</li>
+      </ul>
+    </div>
+
+    <div class="entry proj">
+      <div class="entry-head">
+        <div class="left">
+          <span class="t">University Platform System</span>
+          <span class="stack">&nbsp;|&nbsp; C++, OOP</span>
+        </div>
+      </div>
+      <ul>
+        <li>Designed a university platform system applying programming and object-oriented design concepts to model realistic academic workflows.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ SKILLS ============ -->
+  <div class="sec">
+    <div class="sec-title">Technical Skills</div>
+    <div class="skill-row"><div class="k">Languages</div><div class="v">C, C++, C#, Python, PHP, JavaScript, HTML, CSS</div></div>
+    <div class="skill-row"><div class="k">Backend</div><div class="v">.NET, C#, Backend Development</div></div>
+    <div class="skill-row"><div class="k">Core Concepts</div><div class="v">Object-Oriented Programming (OOP), Data Structures, Software Engineering, System Design</div></div>
+    <div class="skill-row"><div class="k">Tools / Practices</div><div class="v">Problem Solving, Git &amp; GitHub, Software Development, Team Leadership</div></div>
+  </div>
+
+  <!-- ============ COURSES + LANGUAGES ============ -->
+  <div class="sec">
+    <div class="two-col">
+      <div>
+        <div class="sec-title">Courses</div>
+        <ul style="margin-top:0">
+          <li>Software Engineering — Core Academy</li>
+          <li>Backend .NET — Core Academy</li>
+        </ul>
+      </div>
+      <div>
+        <div class="sec-title">Languages</div>
+        <div style="margin-top:0">Arabic — Native &nbsp;·&nbsp; English — B1 &nbsp;·&nbsp; German — A2</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
